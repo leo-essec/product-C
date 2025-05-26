@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lean Canvas: ThermoHarvest Sleep System</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { 
+      font-family: 'Inter', 'Segoe UI', Arial, sans-serif; 
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      margin: 0; 
+      padding: 20px;
+      line-height: 1.5;
+    }
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      background: #ffffff; 
+      border-radius: 16px; 
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .canvas-title { 
+      font-size: 2.2em; 
+      font-weight: 700; 
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+    }
+    .subtitle {
+      font-size: 1.1em;
+      opacity: 0.9;
+      margin-bottom: 15px;
+    }
+    .meta { 
+      display: flex; 
+      justify-content: center;
+      gap: 30px;
+      font-size: 0.9em; 
+      opacity: 0.8;
+      flex-wrap: wrap;
+    }
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(5, 1fr); 
+      grid-template-rows: repeat(3, auto); 
+      gap: 1px;
+      background: #e0e6ed;
+      padding: 1px;
+    }
+    .cell { 
+      background: #ffffff; 
+      padding: 24px; 
+      min-height: 160px;
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+    .cell:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .cell-title { 
+      font-weight: 700; 
+      color: #2c3e50; 
+      margin-bottom: 12px; 
+      font-size: 1.1em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .icon {
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    .cell-content {
+      color: #4a5568;
+      font-size: 0.95em;
+    }
+    .highlight {
+      background: linear-gradient(135deg, #667eea20, #764ba220);
+      border-left: 4px solid #667eea;
+      padding: 8px 12px;
+      margin: 8px 0;
+      border-radius: 0 4px 4px 0;
+      font-weight: 500;
+    }
+    .tag {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #4a5568;
+      padding: 4px 8px;
+      border-radius: 12px;
+      font-size: 0.8em;
+      margin: 2px 4px 2px 0;
+      font-weight: 500;
+    }
+    .priority {
+      background: #fed7d7;
+      color: #c53030;
+    }
+    .opportunity {
+      background: #c6f6d5;
+      color: #2f855a;
+    }
+    .span2 { grid-column: span 2; }
+    .span3 { grid-column: span 3; }
+    .problem { background: #fef5e7; }
+    .solution { background: #f0fff4; }
+    .uvp { background: #e6fffa; }
+    .advantage { background: #faf5ff; }
+    .customers { background: #fff5f5; }
+    
+    @media (max-width: 1000px) {
+      .grid { grid-template-columns: repeat(3, 1fr); }
+      .span2 { grid-column: span 2; }
+      .span3 { grid-column: span 3; }
+    }
+    @media (max-width: 700px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .span2, .span3 { grid-column: span 2; }
+      .meta { gap: 15px; }
+    }
+    @media (max-width: 500px) {
+      .grid { grid-template-columns: 1fr; }
+      .span2, .span3 { grid-column: span 1; }
+      .container { margin: 10px; border-radius: 12px; }
+      .header { padding: 20px; }
+      .canvas-title { font-size: 1.8em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="canvas-title">ThermoHarvest Sleep System</div>
+      <div class="subtitle">Climate-Adaptive Sleeping Bag with Energy Harvesting Technology</div>
+      <div class="meta">
+        <div>📍 Target: Premium Outdoor Market</div>
+        <div>🏢 Company: NexStride</div>
+        <div>📅 Date: May 26, 2025</div>
+        <div>🔄 Version: 2.0</div>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="cell problem">
+        <div class="cell-title">
+          <span class="icon">!</span>
+          Problem
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Core Pain Points:</strong>
+          </div>
+          • <strong>78% of campers</strong> report poor sleep due to temperature fluctuations<br>
+          • <strong>$2.8B annual loss</strong> in ruined trips from inadequate gear<br>
+          • Device battery anxiety affects <strong>89% of outdoor enthusiasts</strong><br><br>
+          
+          <div class="highlight">
+            <strong>Current Solutions Fall Short:</strong>
+          </div>
+          • Traditional bags: No adaptation to weather changes<br>
+          • Electric heated bags: Heavy, expensive, fire risk<br>
+          • Power banks: Extra weight, limited capacity<br>
+          • Layering systems: Complex, bulky, inconsistent
+        </div>
+      </div>
+      
+      <div class="cell solution">
+        <div class="cell-title">
+          <span class="icon">⚡</span>
+          Solution
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Smart Climate Control:</strong>
+          </div>
+          • Micro-heating strips respond in <strong>30 seconds</strong><br>
+          • Phase-change materials maintain optimal 68-72°F<br>
+          • AI learns personal comfort patterns<br><br>
+          
+          <div class="highlight">
+            <strong>Energy Independence:</strong>
+          </div>
+          • Harvests 15-25W from body heat overnight<br>
+          • Powers 2-3 device charges per sleep cycle<br>
+          • Zero external power dependency<br><br>
+          
+          <div class="highlight">
+            <strong>Premium Experience:</strong>
+          </div>
+          • 40% lighter than comparable systems<br>
+          • Silent operation, machine washable
+        </div>
+      </div>
+      
+      <div class="cell uvp">
+        <div class="cell-title">
+          <span class="icon">💎</span>
+          Unique Value Proposition
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            "The world's first sleeping bag that keeps you perfectly comfortable while powering your adventures"
+          </div>
+          
+          <span class="tag opportunity">Zero Energy Dependency</span>
+          <span class="tag opportunity">Perfect Sleep Guarantee</span>
+          <span class="tag priority">Revolutionary Technology</span><br><br>
+          
+          <strong>Key Differentiators:</strong><br>
+          • Only system combining climate control + energy harvesting<br>
+          • Saves $200+ per trip on power solutions<br>
+          • Extends outdoor adventures by 2-3 days<br>
+          • Reduces gear weight by 35%
+        </div>
+      </div>
+      
+      <div class="cell advantage">
+        <div class="cell-title">
+          <span class="icon">🛡️</span>
+          Unfair Advantage
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>IP Protection:</strong>
+          </div>
+          • 3 granted patents, 5 pending<br>
+          • Proprietary thermoelectric harvesting<br>
+          • 18-month tech lead over competitors<br><br>
+          
+          <div class="highlight">
+            <strong>Strategic Assets:</strong>
+          </div>
+          • Exclusive partnerships with DuPont (materials)<br>
+          • 50+ outdoor influencer network<br>
+          • Manufacturing cost advantage: 40% lower<br>
+          • Sleep data creates user lock-in
+        </div>
+      </div>
+      
+      <div class="cell customers">
+        <div class="cell-title">
+          <span class="icon">👥</span>
+          Customer Segments
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Primary Target (65% of sales):</strong>
+          </div>
+          <span class="tag priority">Tech-Forward Adventurers</span><br>
+          • Age 28-45, income $75K+<br>
+          • 15+ outdoor trips/year, early adopters<br>
+          • Value premium gear, sustainability<br><br>
+          
+          <div class="highlight">
+            <strong>Secondary Markets:</strong>
+          </div>
+          <span class="tag">Emergency Response Teams</span>
+          <span class="tag">Military/Defense</span>
+          <span class="tag">Luxury Glamping</span><br><br>
+          
+          <strong>Market Size:</strong> $4.2B addressable, growing 12% annually
+        </div>
+      </div>
+      
+      <div class="cell">
+        <div class="cell-title">
+          <span class="icon">📊</span>
+          Key Metrics
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Growth Metrics:</strong>
+          </div>
+          • Monthly Recurring Revenue (MRR)<br>
+          • Customer Acquisition Cost (CAC)<br>
+          • Lifetime Value (LTV): Target $2,400<br><br>
+          
+          <div class="highlight">
+            <strong>Product Metrics:</strong>
+          </div>
+          • Sleep quality score (app data)<br>
+          • Energy harvested per night<br>
+          • Net Promoter Score: Target 60+<br>
+          • Return rate: Target <3%<br><br>
+          
+          <div class="highlight">
+            <strong>Business Metrics:</strong>
+          </div>
+          • Gross margin: Target 65%<br>
+          • Monthly active users (app)
+        </div>
+      </div>
+      
+      <div class="cell">
+        <div class="cell-title">
+          <span class="icon">🚀</span>
+          Channels
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Direct Sales (60%):</strong>
+          </div>
+          • Premium e-commerce platform<br>
+          • Subscription app with analytics<br>
+          • Trade shows & outdoor events<br><br>
+          
+          <div class="highlight">
+            <strong>Retail Partners (35%):</strong>
+          </div>
+          • REI, Patagonia, Dick's Sporting Goods<br>
+          • European outdoor chains<br>
+          • Amazon (limited SKUs)<br><br>
+          
+          <div class="highlight">
+            <strong>B2B Sales (5%):</strong>
+          </div>
+          • Military/government contracts<br>
+          • Corporate outdoor programs<br>
+          • Rescue/emergency services
+        </div>
+      </div>
+      
+      <div class="cell span2">
+        <div class="cell-title">
+          <span class="icon">💰</span>
+          Cost Structure
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Major Cost Centers:</strong>
+          </div>
+          • <strong>Manufacturing (35%):</strong> Materials, assembly, quality control<br>
+          • <strong>R&D (25%):</strong> Hardware/software development, testing<br>
+          • <strong>Marketing (20%):</strong> Digital ads, influencer partnerships, events<br>
+          • <strong>Operations (15%):</strong> Logistics, customer support, overhead<br>
+          • <strong>Sales (5%):</strong> Channel partnerships, sales team<br><br>
+          
+          <div class="highlight">
+            <strong>Variable Costs:</strong>
+          </div>
+          • Raw materials: $180 per unit<br>
+          • Manufacturing: $45 per unit<br>
+          • Shipping: $25 per unit<br><br>
+          
+          <div class="highlight">
+            <strong>Fixed Costs:</strong>
+          </div>
+          • Team salaries: $2.1M annually<br>
+          • R&D infrastructure: $800K annually<br>
+          • Marketing base: $1.5M annually
+        </div>
+      </div>
+      
+      <div class="cell span2">
+        <div class="cell-title">
+          <span class="icon">💵</span>
+          Revenue Streams
+        </div>
+        <div class="cell-content">
+          <div class="highlight">
+            <strong>Primary Revenue (85%):</strong>
+          </div>
+          • <strong>Premium Product Sales:</strong> $899 MSRP<br>
+          • <strong>Gross Margin:</strong> 65% target<br>
+          • <strong>Volume Target:</strong> 50K units Year 1<br>
+          • <strong>Revenue Target:</strong> $45M Year 1<br><br>
+          
+          <div class="highlight">
+            <strong>Recurring Revenue (10%):</strong>
+          </div>
+          • <strong>Premium App Subscription:</strong> $9.99/month<br>
+          • Advanced sleep analytics, gear optimization<br>
+          • Target: 30% subscriber conversion<br><br>
+          
+          <div class="highlight">
+            <strong>Licensing Revenue (5%):</strong>
+          </div>
+          • Technology licensing to gear manufacturers<br>
+          • B2B energy harvesting solutions<br>
+          • Target: $2-3M annually by Year 3<br><br>
+          
+          <div class="highlight">
+            <strong>Future Opportunities:</strong>
+          </div>
+          • Accessories & replacement parts<br>
+          • Corporate wellness programs<br>
+          • International expansion partnerships
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
